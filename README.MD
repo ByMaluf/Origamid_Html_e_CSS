@@ -5,6 +5,7 @@
 ### Tag `<img>`
 
 - Por padrão, a tag `<img>` é tratada como `display: inline-block`.
+- Se a imagem for apenas decorativa deixar o texto alternativo vazio.
 
 ### Propriedade `margin`
 
@@ -29,7 +30,18 @@
 
 - `justify-content`: Alinhamento na HORIZONTAL.
 
+- `justify-items`: Define o alinhamento padrão para todos os itens dentro de um container de grid ao longo do eixo da linha (horizontal).
+
+- `align-items`: Define o alinhamento padrão para todos os itens dentro de um container Flex ou grid ao longo do eixo transversal (vertical em Flexbox, horizontal ou vertical em Grid, dependendo da orientação da grid).
+
+- `justify-self`: Define o alinhamento de um item específico dentro de sua área de grid ao longo do eixo da linha (horizontal).
+
+- `align-self`: Define o alinhamento de um item específico dentro de sua área em um container Flex ou grid ao longo do eixo transversal (vertical em Flexbox, horizontal ou vertical em Grid).
+
 - `place-content`: Atalho para `align-content` e `justify-content`, **_respectivamente_**. Se apenas um valor for especificado, ele valerá para ambos.
+- `place-items`: Atalho para definir `align-items` e `justify-items` ao mesmo tempo. Se apenas um valor for especificado, ele será aplicado a ambos os eixos.
+
+- `place-self`: Atalho para definir `align-self` e `justify-self` para um item específico. Se apenas um valor for especificado, ele será aplicado a ambos os eixos.
 
   - Para esses tipos de alinhamento, deve haver espaço sobrando, caso contrário, eles não terão efeito.
 
