@@ -1,0 +1,43 @@
+/*Este pseudo seletor seleciona apenas a primeira li*/
+.lista-1 li:first-child {
+  background-color: #caf;
+}
+
+/* Note que o efeito cascata não funciona como deveria, isso porque a pseude classe first-child tem uma relevância maior do que o li sozinha (Especificidade dos seletores). Se quiser manter essa ordem e, ainda, sobrescrever o first-child, use o "!important"*/
+.lista-1 li {
+  background-color: #ffa;
+}
+
+.lista-1 li:last-child {
+  background-color: #cfa;
+}
+
+.lista-1 li:nth-child(3) {
+  /*É uma função por isso os parênteses, no caso esta selecionando o terceiro elemento*/
+  background-color: #cfa;
+}
+
+/* ________________________________________________ */
+
+/* even - Seleciona todos os elementos pares */
+/* .lista-2 li:nth-child(even) {
+  background-color: #cfa;
+} */
+
+.lista-2 li:nth-child(odd) {
+  /* odd - Seleciona todos os elementos ímpares */
+  background-color: #ffa;
+}
+
+/* Seleciona todos os elementos no intervalo de 3, ou seja, terceiro, sexto e assim por diante */
+.lista-2 li:nth-child(3n) {
+  background-color: #ffa;
+}
+
+.lista-3 li:not(:first-child, :last-child, .terceiro) {
+  background-color: #caf;
+}
+
+h2:not(.contato) {
+  text-decoration: underline;
+}
