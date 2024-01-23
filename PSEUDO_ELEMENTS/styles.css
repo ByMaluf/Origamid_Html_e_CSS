@@ -1,0 +1,76 @@
+/* ::before ::afeter */
+/* Cria elementos HTML por meio do CSS */
+/* Utilizados geralmente para decoração */
+
+/* Antes do elemento */
+h1::before {
+  content: "ANTES";
+}
+
+/* Depois do elemento */
+h1::after {
+  content: "DEPOIS";
+}
+
+/* h1 {
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-color: #caf;
+  margin-right: 10px;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+} */
+
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #caf;
+}
+
+/* Criar meu próprio formato para as marcações <li> via CSS */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-image: linear-gradient(#caf, #fff);
+  border: 2px solid #caf;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* ::first-line ::first-letter */
+/* O primeiro seleciona a primeira Linha */
+/* O segundo selecionar a primeira letra */
+
+p {
+  width: 500px;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 2rem;
+}
