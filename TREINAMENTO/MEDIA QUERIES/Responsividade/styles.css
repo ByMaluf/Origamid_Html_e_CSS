@@ -1,0 +1,56 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+h1 {
+  grid-column: 1/-1;
+}
+
+/* faça isso quando a tela for Menor que 600px (max) "maior que" */
+@media (max-width: 600px) {
+  div {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    background-color: lightpink;
+  }
+  /* Caso queira remover um elemento */
+  /* Cuidado para não retirar funcionalidades do seu site na versão mobile */
+  img {
+    display: none;
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  html {
+    font-size: 150%;
+  }
+} */
+
+/* ou */
+
+/* Acime de 1000px e abaixo de 500px ele aumenta para 150% */
+/* @media (min-width: 1000px), (max-width: 500px) {
+  html {
+    font-size: 150%;
+  }
+} */
+
+/* Ambas as condições devem ser verdadeiras para a aplicação da estilização */
+/* @media (min-width: 700px) and (max-width: 900px) {
+  p {
+    background-color: lightblue;
+  }
+} */
+
+/* Media screen e Media print  */
+/*  Media screen: Usado para estilos que serão aplicados quando o conteúdo for exibido em telas de computadores, tablets, telefones, etc. É o tipo de mídia mais comum para estilização web. */
+/* Media print: Usado para estilos específicos para quando uma página é impressa. Isso pode incluir a remoção de fundos, alteração de cores para melhor legibilidade em papel, ocultar elementos que não são necessários na impressão, etc. */
+/* Essencialmente, screen é para visualização em dispositivos eletrônicos e print é para quando o conteúdo é impresso. */

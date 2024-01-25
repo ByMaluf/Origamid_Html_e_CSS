@@ -11,7 +11,7 @@
 
 - A propriedade `margin` refere-se ao espaçamento externo do **documento** e não está relacionada ao modo de escrita (`writing-mode: vertical-rl;`).
 
-- A propriedade `margin` pode colidir com outras, prevalecendo sempre a de maior valor.
+- A propriedade `margin` pode colidir com  outras, prevalecendo sempre a de maior valor.
   - A colisão **NÃO** se aplica quando se utiliza das tecnologias de Display `Grid` e `Flex`.
 
 ### Propriedade `div`

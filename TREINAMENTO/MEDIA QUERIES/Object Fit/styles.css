@@ -1,0 +1,23 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.cover img {
+  /* Ocupar 100% do elemento pai, no caso o total da sua parcela no grid */
+  height: 100%;
+  /* Parecido com o background-size só que para tags <img> */
+  object-fit: cover;
+  /* Parecido com o background-position só que para tags <img> */
+  object-position: top right;
+}
