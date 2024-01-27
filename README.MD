@@ -91,3 +91,45 @@ O Lighthouse do Google Chrome é uma **ferramenta automatizada de código aberto
 - Avalia se o site cumpre os critérios para ser um PWA, incluindo a capacidade de funcionar offline e receber notificações push.
 
 O Lighthouse pode ser usado no Google Chrome (ferramentas de desenvolvedor) ou como uma extensão independente. Ele gera um relatório com pontuações e recomendações para otimização do site, experiência do usuário e visibilidade em mecanismos de busca.
+
+Claro, aqui está o texto sobre `clean-css-cli` formatado com marcação Markdown:
+
+---
+
+# Uso de `clean-css-cli` para Otimização de CSS
+
+`clean-css-cli` é um pacote no npm (Node Package Manager) que fornece uma ferramenta de linha de comando para otimizar arquivos CSS. Esta ferramenta é uma interface CLI (Command Line Interface) para `clean-css`, uma biblioteca popular para otimização de CSS.
+
+### Características
+
+- **Minificação**: Comprime arquivos CSS, removendo espaços, comentários e otimizando nomes para reduzir o tamanho.
+- **Reescrita de URL**: Ajusta ou reescreve URLs dentro dos arquivos CSS.
+- **Combinação de Arquivos**: Une múltiplos arquivos CSS em um único arquivo.
+
+### Como Usar
+
+1. **Instalação**:
+   ```bash
+   npm install -g clean-css-cli
+   ```
+2. **Execução**:
+   ```bash
+   cleancss -o arquivo-otimizado.css arquivo-original.css
+   ```
+   Isso processa `arquivo-original.css` e cria uma versão otimizada `arquivo-otimizado.css`.
+
+### Benefícios
+
+- **Melhoria de Performance**: Reduz o tamanho dos arquivos CSS, acelerando o carregamento do site.
+- **Facilidade de Uso**: Pode ser facilmente integrado em processos de build e deployment.
+
+### Considerações
+
+- **Personalização**: Oferece várias opções para diferentes necessidades de otimização.
+- **Integração com Ferramentas de Build**: Pode ser usado com Gulp, Webpack, etc., para automação.
+
+`clean-css-cli` é uma ferramenta eficiente para desenvolvedores que buscam otimizar o desempenho do site através da redução do tamanho dos arquivos CSS. Ele oferece funcionalidades úteis como minificação, reescrita de URL e combinação de arquivos, tornando-se um recurso valioso no desenvolvimento front-end.
+
+[clean-css-cli](https://www.npmjs.com/package/clean-css-cli)
+
+---
