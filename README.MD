@@ -11,7 +11,7 @@
 
 - A propriedade `margin` refere-se ao espaçamento externo do **documento** e não está relacionada ao modo de escrita (`writing-mode: vertical-rl;`).
 
-- A propriedade `margin` pode colidir com  outras, prevalecendo sempre a de maior valor.
+- A propriedade `margin` pode colidir com outras, prevalecendo sempre a de maior valor.
   - A colisão **NÃO** se aplica quando se utiliza das tecnologias de Display `Grid` e `Flex`.
 
 ### Propriedade `div`
@@ -60,3 +60,34 @@
 - `_space-around_`: Distribui o espaço ao redor de cada elemento. Diferente de _space-between_, aqui o espaço é distribuído igualmente ao redor de cada elemento, resultando em um espaço meio maior nas extremidades.
 
 - `_space-evenly_`: Distribui o espaço de forma igual entre e ao redor dos elementos. Todos os espaços - entre os elementos e entre os elementos e as bordas - são iguais.
+
+### `OUTROS`
+
+# Lighthouse do Google Chrome
+
+O Lighthouse do Google Chrome é uma **ferramenta automatizada de código aberto** usada para melhorar a qualidade das páginas web. Ela ajuda desenvolvedores e webmasters a avaliar e otimizar suas páginas em diversas áreas críticas:
+
+## Performance
+
+- Avalia o tempo de carregamento e a rapidez da interação da página.
+- Métricas incluem Largest Contentful Paint, First Input Delay, e Cumulative Layout Shift.
+
+## Acessibilidade
+
+- Verifica a acessibilidade para usuários com deficiências.
+- Inclui a avaliação de contraste de cores, etiquetas em formulários, e uso de ARIA.
+
+## Melhores Práticas
+
+- Analisa o uso de práticas recomendadas na web, como HTTPS e formatos de imagem corretos.
+
+## SEO (Search Engine Optimization)
+
+- Orientações para tornar a página mais amigável para mecanismos de busca.
+- Verificação de metatags, textos alternativos em imagens, e links acessíveis.
+
+## Progressive Web App (PWA)
+
+- Avalia se o site cumpre os critérios para ser um PWA, incluindo a capacidade de funcionar offline e receber notificações push.
+
+O Lighthouse pode ser usado no Google Chrome (ferramentas de desenvolvedor) ou como uma extensão independente. Ele gera um relatório com pontuações e recomendações para otimização do site, experiência do usuário e visibilidade em mecanismos de busca.
