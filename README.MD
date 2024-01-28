@@ -61,6 +61,8 @@
 
 - `_space-evenly_`: Distribui o espaço de forma igual entre e ao redor dos elementos. Todos os espaços - entre os elementos e entre os elementos e as bordas - são iguais.
 
+---
+
 ### `OUTROS`
 
 # Lighthouse do Google Chrome
@@ -133,3 +135,87 @@ Claro, aqui está o texto sobre `clean-css-cli` formatado com marcação Markdow
 [clean-css-cli](https://www.npmjs.com/package/clean-css-cli)
 
 ---
+
+# Linha de Comando (CLI)
+
+### Movimentar (Bash)
+
+- **Mover para a pasta sites**:
+
+  ```bash
+  cd sites
+  ```
+
+- **Mover para a pasta anterior**:
+
+  ```bash
+  cd ..
+  ```
+
+- **Mover para a pasta sites dentro de Desktop**:
+
+  ```bash
+  cd ~/Desktop/sites
+  ```
+
+- **Mover para o diretório principal do sistema / home**:
+
+  ```bash
+  cd ~
+  ```
+
+- **Limpar a tela**:
+  ```bash
+  clear
+  ```
+
+### Listar e Criar (Bash)
+
+- **Listar diretórios e arquivos**:
+
+  ```bash
+  ls
+  ```
+
+- **Listar diretórios, arquivos, invisíveis e detalhes**:
+
+  ```bash
+  ls -all
+  ```
+
+- **Criar o diretório site**:
+
+  ```bash
+  mkdir site
+  ```
+
+- **Criar o arquivo index.html**:
+  ```bash
+  touch index.html
+  ```
+
+### Remover (Bash)
+
+- **Remover o arquivo index.html**:
+
+  ```bash
+  rm index.html
+  ```
+
+- **Remover o diretório site e todos os arquivos dentro dele**:
+  ```bash
+  rm -r site
+  ```
+
+### Navegação e Auto-Completação
+
+- **Acessar o comando anterior**:
+
+  - Use a seta para cima ou para baixo.
+
+- **Auto-completar o comando**:
+  - Pressione a tecla tab.
+
+---
+
+Esta formatação Markdown organiza as informações de maneira clara e estruturada, facilitando a leitura e o entendimento.
