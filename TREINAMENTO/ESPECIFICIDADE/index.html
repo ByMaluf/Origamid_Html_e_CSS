@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especificidade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- 
+  Especificidade
+  A ordem do elemento só importa se eles possuírem a mesma especificidade. Caso contrário o seletor mais específico irá prevalecer.
+
+  id (1, 0, 0) Primeiro nível.
+  classes, atributos e pseudo classes (0, 1, 0) Segundo nível.
+  elementos e pseudo elementos (0, 0, 1) Terceiro nível. 
+-->
+
+
+  <section id="intro">
+    <h2 id="produtos" class="titulo teste">Produtos</h2>
+    <h2 id="servicos" class="titulo teste">Servuços</h2>
+  </section>
+
+
+
+</body>
+
+</html>

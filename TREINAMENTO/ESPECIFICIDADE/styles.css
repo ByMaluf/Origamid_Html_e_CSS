@@ -1,0 +1,45 @@
+/* Existem três níveis de especificidade */
+/* Se passar com o cursor do mouse em cima do seletor verá os níveis.*/
+/* O número contigo em cada nível é determinado pela quantidade de seletores selecionados, quanto maior o número, maior é especificidade dentro daquele nível*/
+
+/* Terceiro nível porque utilizei uma tag */
+body {
+  font-size: 2rem;
+}
+
+/* Primeiro nível porque eu utilizei um id  */
+#produtos {
+  color: lightgreen;
+}
+
+/* Segundo nível poque utilizei uma classe */
+/* Seletores de mesma especificidade */
+.titulo {
+  color: tomato;
+  padding: 10px;
+}
+
+.titulo {
+  color: blue;
+}
+
+html body section h2 {
+  border-left: 8px solid lightgreen;
+}
+
+html section#intro h2 {
+  border-left: 8px solid lightsalmon;
+}
+
+/* "!important passar por cima de qualquer regra de especificidade, independente da posição em que a declaração esteja." */
+
+h2 {
+  color: black !important;
+}
+
+/* Seu existem mais de um "!important" prevalece o seletor que tem mais especificidade */
+/* Exemplo: ID, que possui maior nível dentro da regra de especificidade + !important* - essa configuração prevalace em relação a supricitada, que é apenas um seletor de tag + !important*/
+
+#produtos {
+  color: lightgreen !important;
+}
