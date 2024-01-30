@@ -1,0 +1,75 @@
+/* [required] {
+  border: 2px solid tomato;
+} */
+
+[href="#contato"] {
+  border: 2px solid green;
+}
+
+/* É possível fazer dessa forma também: seleciona exatamente a tag que tenha exatamente esse atributo com esse valor */
+a[href="#contato"] {
+  border: 2px solid green;
+}
+
+/* O espaço significa, um elemento que tiver um atributo required dentro de um elemento <p> */
+p [required] {
+  border: 2px solid tomato;
+}
+
+/* Seleciona somente os atributos com valores que iniciam com '#' */
+[href^="#"] {
+  background: tomato;
+}
+
+/* Seleciona somente os atributos com valores que terminam com '.com' */
+[href$=".com"] {
+  background: forestgreen;
+}
+
+/* ------------------------- */
+
+/* Aplica o estilo em todos os descendentes <h2> encontrados */
+
+/* section h2 {
+  color: tomato;
+} */
+
+/* Aplica o estilo em todos os descendentes DIRETOS <h2> encontrados. Ou seja, os filhos. */
+section > h2 {
+  color: tomato;
+  border: 3px pink dashed;
+}
+
+section h2 {
+  border: 2px solid rgb(33, 33, 33);
+  /* color: blueviolet; */
+  color: cyan;
+}
+
+p {
+  margin: 0px;
+}
+
+article {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+/* Seleciona o último filho */
+/* article p:last-child {
+  margin-bottom: 0px;
+} */
+
+/* Seleciona toda tag <p> antecedida de uma teg <p> */
+/* Só selecionar o p, que vierem após outro p */
+p + p {
+  margin-top: 20px;
+}
+
+/* Raiz HTML, seleciona todos os elementos da tela e aplica a estilização */
+/* Diferentemente do body ele não herda, mas sim seleciona! */
+
+* {
+  border: 2px solid rgb(255, 5, 5);
+  /* color: blueviolet; */
+}
