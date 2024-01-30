@@ -1,0 +1,30 @@
+/* Dessa forma, para funcionar, a variável deve ser declarada dentro do seletor senão não funciona */
+h1 {
+  --cor-primaria: #84e;
+  color: var(--cor-primaria);
+  font-size: var(--fonte-grande);
+}
+
+/* Aqui a tag <p> não vai herdar o valor de --roxo, pois foi declarada apenas no h1 */
+p {
+  background-color: var(--cor-primaria);
+  font-size: calc(
+    var(--fonte-grande) / 2
+  ); /* envolvo a variável com calc e divido por dois para atribuir apenas metade do valor da fonte */
+  margin-top: var(--fonte-grande);
+  border: var(--borda);
+}
+
+/* Duas formas de se utilzar */
+/* Todos os elementos herdam do documento */
+html {
+  --cor-primaria: #84e;
+}
+
+/* Ou, DA FORMA UTILIZADA (No início do documento css) */
+/* Não há limite de apenas um tipo de valor */
+:root {
+  --cor-primaria: #84e;
+  --borda: 2px solid blue;
+  --fonte-grande: 3rem;
+}
