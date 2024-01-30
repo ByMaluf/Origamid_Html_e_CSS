@@ -1,5 +1,9 @@
 # Anotações - Origamid
 
+<center>
+<img src="./md.img/origamid.svg" alt="Origamid" height="50" width="300">
+</center>
+
 ## HTML & CSS Insights
 
 ### Tag `<img>`
@@ -61,7 +65,7 @@
 
 - `_space-evenly_`: Distribui o espaço de forma igual entre e ao redor dos elementos. Todos os espaços - entre os elementos e entre os elementos e as bordas - são iguais.
 
----
+- [Guia Grid](https://www.origamid.com/projetos/css-grid-layout-guia-completo/)
 
 ### `OUTROS`
 
@@ -100,6 +104,12 @@ Claro, aqui está o texto sobre `clean-css-cli` formatado com marcação Markdow
 
 # Uso de `clean-css-cli` para Otimização de CSS
 
+<center>
+  <img src="./md.img/clean-css.svg" alt="clean-css">
+</center>
+
+---
+
 `clean-css-cli` é um pacote no npm (Node Package Manager) que fornece uma ferramenta de linha de comando para otimizar arquivos CSS. Esta ferramenta é uma interface CLI (Command Line Interface) para `clean-css`, uma biblioteca popular para otimização de CSS.
 
 ### Características
@@ -132,7 +142,7 @@ Claro, aqui está o texto sobre `clean-css-cli` formatado com marcação Markdow
 
 `clean-css-cli` é uma ferramenta eficiente para desenvolvedores que buscam otimizar o desempenho do site através da redução do tamanho dos arquivos CSS. Ele oferece funcionalidades úteis como minificação, reescrita de URL e combinação de arquivos, tornando-se um recurso valioso no desenvolvimento front-end.
 
-[clean-css-cli](https://www.npmjs.com/package/clean-css-cli)
+- [clean-css-cli](https://www.npmjs.com/package/clean-css-cli)
 
 ---
 
@@ -218,4 +228,47 @@ Claro, aqui está o texto sobre `clean-css-cli` formatado com marcação Markdow
 
 ---
 
-Esta formatação Markdown organiza as informações de maneira clara e estruturada, facilitando a leitura e o entendimento.
+## Pseudo-seletores e Pseudo-elementos no CSS
+
+No desenvolvimento web, especialmente em relação ao CSS, o termo "pseudo" refere-se a "pseudo-classes" e "pseudo-elementos". Estes são usados para definir estados especiais ou subconjuntos de elementos.
+
+### Pseudo-classes
+
+Uma **pseudo-classe** é usada para definir um estado especial de um elemento. Por exemplo:
+
+- `:hover` aplica um estilo quando o usuário passa o mouse sobre um elemento.
+- `:active`, `:focus`, e `:visited` são usadas para links.
+- `:first-child` seleciona o primeiro filho de um elemento.
+
+**Exemplo:**
+
+```css
+a:hover {
+  color: red;
+}
+```
+
+Neste exemplo, a pseudo-classe `:hover` muda a cor de um elemento `<a>` quando ele é passado por um mouse.
+
+### Pseudo-elementos
+
+**Pseudo-elementos** são usados para estilizar partes específicas de um elemento, como:
+
+- `::before` e `::after` inserem conteúdo antes ou depois do conteúdo de um elemento.
+- São frequentemente usados para adicionar decorações ou formatar uma parte específica de um texto.
+
+**Exemplo:**
+
+```css
+p::first-line {
+  font-weight: bold;
+}
+```
+
+Aqui, o pseudo-elemento `::first-line` aplica um estilo à primeira linha de todos os parágrafos.
+
+### Por que "Pseudo"?
+
+Esses seletores são chamados de "pseudo" porque não selecionam elementos reais no DOM (Document Object Model) de forma direta. Em vez disso, eles se referem a estados, ações ou partes de elementos que não são explicitamente definidos no HTML. Eles permitem que os desenvolvedores apliquem estilos de forma mais dinâmica e específica sem a necessidade de adicionar classes ou IDs adicionais no HTML.
+
+---
