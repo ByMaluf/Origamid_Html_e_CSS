@@ -17,7 +17,8 @@
 }
 
 .tecnologia-conteudo {
-  padding: 160px 0;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .tecnologia-conteudo > span {
@@ -30,10 +31,10 @@
 }
 
 .tecnologia-conteudo > p {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
-.tecnologia-conteudo a {
+.tecnologia a {
   margin-bottom: 80px;
 }
 
@@ -60,12 +61,13 @@
     grid-template-columns: 1fr;
   }
   .tecnologia-conteudo {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .tecnologia-imagem {
     display: none;
   }
-  .tecnologia-conteudo a {
+  .tecnologia a {
     margin-bottom: 60px;
   }
 }
