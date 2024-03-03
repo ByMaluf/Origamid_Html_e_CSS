@@ -18,9 +18,13 @@
 - A propriedade `margin` pode colidir com outras, prevalecendo sempre a de maior valor.
   - A colisão **NÃO** se aplica quando se utiliza das tecnologias de Display `Grid` e `Flex`.
 
-### Propriedade `div`
+### Tag `<div>`
 
 - Por padrão, o `width` de uma `<div>` é definido como `auto`.
+
+### Propriedade `box-shadow`
+
+- A propriedade box-shadow **_NÃO_** aceita valores em porcentagem.
 
 ### Propriedade `display: grid`
 
