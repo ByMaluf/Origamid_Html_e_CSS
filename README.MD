@@ -276,3 +276,8 @@ Aqui, o pseudo-elemento `::first-line` aplica um estilo à primeira linha de tod
 Esses seletores são chamados de "pseudo" porque não selecionam elementos reais no DOM (Document Object Model) de forma direta. Em vez disso, eles se referem a estados, ações ou partes de elementos que não são explicitamente definidos no HTML. Eles permitem que os desenvolvedores apliquem estilos de forma mais dinâmica e específica sem a necessidade de adicionar classes ou IDs adicionais no HTML.
 
 ---
+
+## Utilitários - Extensões
+
+- Image preview
+  - Shows image preview in the gutter and on hover
