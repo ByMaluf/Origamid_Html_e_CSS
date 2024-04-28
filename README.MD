@@ -102,8 +102,6 @@ O Lighthouse do Google Chrome é uma **ferramenta automatizada de código aberto
 
 O Lighthouse pode ser usado no Google Chrome (ferramentas de desenvolvedor) ou como uma extensão independente. Ele gera um relatório com pontuações e recomendações para otimização do site, experiência do usuário e visibilidade em mecanismos de busca.
 
-Claro, aqui está o texto sobre `clean-css-cli` formatado com marcação Markdown:
-
 ---
 
 # Uso de `clean-css-cli` para Otimização de CSS
