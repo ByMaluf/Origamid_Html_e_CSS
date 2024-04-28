@@ -21,24 +21,23 @@ function ativarProduto(parametros) {
 parametros.forEach(ativarProduto)
 
 //Ativar Perguntas
-const perguntas = document.querySelectorAll('.perguntas dl div');
+const perguntas = document.querySelectorAll('.perguntas button');
 
-perguntas.forEach(pergunta => {
-  const botoes = pergunta.querySelectorAll('button');
-  const dd = pergunta.querySelector('dd');
-  console.log(dd)
-  botoes.forEach(botao => {
-    botao.addEventListener('click', () => {
-      const aria = botao.getAttribute('aria-controls');
-      const ddId = dd.getAttribute('id');
-      if (aria === ddId) {
-        dd.classList.toggle('ativa')
-      }
-      console.log('O botão com aria-controls ' + aria + ' foi clicado!');
-      console.log('O ID da tag <dd> é: ' + ddId);
-    });
-  });
-});
+
+function ativarPergunta(event) {
+  const pergunta = event.currentTarget;
+  const controls = pergunta.getAttribute('aria-controls');
+  const resposta = document.getElementById(controls);
+
+  resposta.classList.toggle('ativa');
+  const ativa = resposta.classList.contains('ativa');
+  pergunta.setAttribute('aria-expanded', ativa);
+}
+
+function eventosPerguntas(pergunta) {
+  pergunta.addEventListener('click', ativarPergunta)
+}
+perguntas.forEach(eventosPerguntas)
 
 
 
