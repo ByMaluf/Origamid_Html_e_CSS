@@ -22,8 +22,6 @@ parametros.forEach(ativarProduto)
 
 //Ativar Perguntas
 const perguntas = document.querySelectorAll('.perguntas button');
-
-
 function ativarPergunta(event) {
   const pergunta = event.currentTarget;
   const controls = pergunta.getAttribute('aria-controls');
@@ -39,6 +37,25 @@ function eventosPerguntas(pergunta) {
 }
 perguntas.forEach(eventosPerguntas)
 
+//Galeria de Bicicletas
+const galeria = document.querySelectorAll('.bicicleta-imagens img');
+const galeriaContainer = document.querySelector('.bicicleta-imagens');
 
 
+function trocarImagem(event) {
+  const imagem = event.currentTarget
+  const media = window.matchMedia('(min-width: 1000px)').matches;
+  if (media) {
+    galeriaContainer.prepend(imagem)
+  }
+}
 
+function eventosGaleria(img) {
+  img.addEventListener('click', trocarImagem);
+}
+galeria.forEach(eventosGaleria);
+
+//Animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
